@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+}
+.image {
+  height: 500px;
+  width: 100%;
+}
+.image:nth-child(1){
+  background: url(./media/basic-pics/new-york-buildings-city-night-minimalism-4e.jpg) no-repeat center/cover;
+}
+.image:nth-child(2){
+  background: url(./media/basic-pics/8.jpg) no-repeat center/cover;
+}
+.image:nth-child(3){
+  background: url(./media/basic-pics/wp4600617.jpg) no-repeat center/cover;
+}
+.image:nth-child(4){
+  background: url(./media/basic-pics/Vojo_Fond_Ecran_Copyright_VojoMag-31.jpg) no-repeat center/cover;
+}
+.image:nth-child(5){
+  background: url(./media/basic-pics/railay-beach-thailand-4k-wallpaper.jpg) no-repeat center/cover;
+}
+.image:nth-child(6){
+  background: url(./media/basic-pics/3.jpg) no-repeat center/cover;
+}
+.image-container {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 150px;
+  grid-template-areas: 
+    "a a a"
+    "b c c"
+    "d d e"
+    "f f f";
+}
+.image:nth-child(1){
+  grid-area: a;
+}
+.image:nth-child(2){
+  grid-area: b;
+}
+.image:nth-child(3){
+  grid-area: c;
+}
+.image:nth-child(4){
+  grid-area: d;
+}
+.image:nth-child(5){
+  grid-area: e;
+}
+.image:nth-child(6){
+  grid-area: f;
+}
+@media screen and (max-width: 800px){
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px 200px 300px 200px;
+    grid-template-areas: 
+      "a a a a"
+      "f b c d"
+      "f e e e"
+      "f e e e";
+  }
+  .image:nth-child(6){
+    height: 100%;
+  }
+}
