@@ -11,7 +11,7 @@ body {
     "f f f";
 }
 .bloc:nth-child(1){
-  background: blue;
+  background: darkorchid;
   grid-area: a;
 }
 .bloc:nth-child(2){
@@ -19,11 +19,11 @@ body {
   grid-area: b;
 }
 .bloc:nth-child(3){
-  background: red;
+  background: purple;
   grid-area: c;
 }
 .bloc:nth-child(4){
-  background: green;
+  background: blueviolet;
   grid-area: d;
 }
 .bloc:nth-child(5){
